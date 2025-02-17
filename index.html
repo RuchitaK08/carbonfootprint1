@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+
+
+    <link rel="stylesheet" href="style.css">
+  
+
+    
+
+    <title>Carbon Footprint Calculator</title>
+    <body>
+        <div class="container">
+            <h2> Carbon Footprint Calculator</h2>
+            <label> how many kilometers do you drive per week</label>
+            <input type="number" id="milesDriven" placeholder="enter km"><br>
+            <label> how much electricity do you use per month</label>
+            <input type="number" id="electricityUsed" placeholder="enter in kwh"><br>
+            <label> What is your diet type</label>
+            <select id="diet">
+                
+                <option value="2.5"> Meat lover</option>
+                <option value="1.8"> average</option>
+                <option value="1.2"> vegeterian</option>
+                <option value="0.8"> vegan</option>
+            </select>
+            <button onclick="calculateFootprint()">Calculate</button>
+        
+        <p id="result"></p>
+        <p>Your badge: <span id="badge"></span></p></div>
+        <div class="gif-container">
+            <img id="chillGif" src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbjNoZ2h5ZjRkNzk5ZGIwaTU2bGNvdmkzcm9uMnFkeDh3MHRhcXlwZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qJzZ4APiDZQuJDY7vh/giphy.gif">
+            <p id="chillText"></p>
+            
+        </div>
+        <div class="chillguytext">
+            <p>
+                <p> Lets see what chill guy has to say about your score!</p><br>
+                🔥 High Carbon Footprint:
+                "Yo, bro… the Earth is kinda on fire. Maybe take the bus instead of treating your car like a rocket ship? 🚗💨 Also, lights don’t need to be on 24/7—flip that switch, save some cash, and keep the planet cool. And hey, cutting down on meat? That’s a game-changer. Less BBQ, more 🌱, okay?"
+                <br>
+                😎 Moderate Carbon Footprint:
+                "Not bad, my dude, but there’s room for improvement. Carpooling is basically a social event on wheels, and biking makes you look even cooler. 🚴 Also, do you really need 30-minute showers? Water is precious, and so is your time. Keep it chill, keep it green! 🌿"
+                <br>
+                💚 Low Carbon Footprint (Eco Hero!):
+                "Chill Guy salutes you! 🏅 You’re basically a carbon footprint ninja—silent, effective, and saving the planet one small step at a time. Keep repping those reusable bags, that plant-based goodness, and energy-saving habits. The turtles, the trees, and even the air are vibing with you. 🌍💚"
+            </p>
+        </div>
+        <button id="tipsButton" onclick="toggleTips()">More Ways to Reduce Carbon Footprint</button>
+<div id="tips" style="display: none;">
+    <ul>
+        <li>🚴 Use a bike or walk for short trips.</li>
+        <li>🚗 Carpool or use public transport.</li>
+        <li>🌿 Eat more plant-based meals.</li>
+        <li>💡 Turn off lights when not in use.</li>
+        <li>🔌 Unplug devices when not needed.</li>
+        <li>♻ Reduce, Reuse, Recycle!</li>
+        <li>🌍 Support renewable energy.</li>
+    </ul>
+</div>
+
+        
+        
+    </body>
+</head>
